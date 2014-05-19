@@ -1,0 +1,39 @@
+#form{
+	border-bottom: 1px solid #000;
+	height: 250px;
+	text-align: left;
+	padding: 5px;
+}
+
+.container{
+	border: 1px solid #ddd;
+	height: 500px;
+	margin: 0 auto;
+	text-align: center;
+	width: 960px;
+}
+
+.capas{
+	width: 45%;
+	height: 450px;
+	border:1px solid #ccc;
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+#data{
+	text-align: left;
+	overflow: auto;
+}
+
+#data ul li{
+	list-style: none;
+	font-family: Helvetica,Arial;
+
+}
+
+#data ul li small{
+	color:gray;
+}
+

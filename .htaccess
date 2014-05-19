@@ -1,0 +1,23 @@
+RewriteEngine On
+
+#personalizar errores de navegador
+#error/
+#error/
+#error/
+
+#solo controlador
+RewriteRule ^([a-zA-Z0-9_-]+)\/$ index.php?action=$1 [S]
+
+#dos parametros
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/*$ index.php?action=$1&ide=$2 [L]
+
+#tres parametros
+#RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/.*$ index.php?action=$1&ide=$2&m=$3 [L]
+
+#cuatro parametro
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/*$ index.php?action=$1&ide=$2&m=$3&ide4=$4 [L]
+
+#programa detalle
+
+#RewriteRule ^.*/([a-zA-Z0-9_-]+)\/$ index.php?action=programa-detalle&idb=$1 [S]
+

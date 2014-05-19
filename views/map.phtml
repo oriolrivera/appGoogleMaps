@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		App
+	</title>
+	<link rel="stylesheet" href="<?php echo Routing::base_url(); ?>public/css/style.css">
+</head>
+	<body>
+		<div class="container">
+	
+			<div id="mapa" class="capas"></div>
+
+			<div id="datos" class="capas">
+				<div id="form">
+					<form action="" method="post" id="formSave" name="formSave">
+						
+						<p>
+							<div>
+								<label for="">Latitud</label>
+								<input type="text" name="id_lat" id="id_lat">
+							</div>
+							
+							<div>
+								<label for="">Longitud</label>
+								<input type="text" name="id_lng" id="id_lng">
+								
+							</div>
+							<div><label for="">Mensaje</label><textarea name="descrition" id="" cols="30" rows="10"></textarea></div>
+							<button type="button" id="btn-save">Guardar</button>
+						</p>
+					</form>
+
+				</div>
+				<!-- div id="data">
+					<ul>
+						<li></li>
+					</ul>
+				</div> -->
+     	   </div>
+
+		</div>
+
+
+
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDN7Lq0JZb-DmjDy-usSfsgywqRUxOxqCg&sensor=true"></script>
+
+     <script src="<?php echo Routing::base_url(); ?>public/js/route.js"></script>
+     <script src="<?php echo Routing::base_url(); ?>public/js/script.js"></script>
+	</body>
+</html>
